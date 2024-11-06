@@ -44,6 +44,7 @@ module.exports = {
       const commands = interaction.client.prefixBasedCommand;
       const groupedCommands = Array.from(commands.values()).reduce(
         (acc, command) => {
+          if (command.category === 'Hide')
           if (!acc[command.category]) {
             acc[command.category] = [];
           }
