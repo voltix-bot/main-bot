@@ -5,10 +5,18 @@ const client = new Client({ intents: Object.keys(GatewayIntentBits).map((a)=>{
     return GatewayIntentBits[a]
   })
 });
+const axios = require('axios');
 
 client.commands = new Collection();
 client.aliases = new Collection();
 client.prefixBasedCommand = new Collection();
+client.hastebin = async (text) => {
+  const { data } = await axios.post(
+    "https://brass-unique-crayon.glitch.me/documents", //https://331bf875-fcd5-46f0-8315-71e02dd6d025-00-3pgcvsr36mpcs.kirk.replit.dev/documents
+    text,
+  );
+  return `https://brass-unique-crayon.glitch.me/${data.key}`;
+};
 
 const commandsPath = path.join(__dirname, 'commands');
 fs.readdirSync(commandsPath).forEach((dir) => {
@@ -25,7 +33,7 @@ fs.readdirSync(commandsPath).forEach((dir) => {
               });
           }
       }
-      client.commands.set(command.data.name, command);
+      if (command.data) client.commands.set(command.data.name, command);
   }
 })
 

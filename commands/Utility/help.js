@@ -44,7 +44,6 @@ module.exports = {
       const commands = interaction.client.prefixBasedCommand;
       const groupedCommands = Array.from(commands.values()).reduce(
         (acc, command) => {
-          if (command.category === 'Hide')
           if (!acc[command.category]) {
             acc[command.category] = [];
           }
@@ -59,6 +58,7 @@ module.exports = {
 
       embed.setTitle("All Commands");
       const commandDescriptions = Object.entries(groupedCommands).map(([category, cmds]) => {
+        if (category === 'Hide') return;
         return `**${category}:**\n` + cmds.map((cmd) => `\`${cmd.name}\` - **${cmd.description}**`).join("\n");
       }).join("\n\n");
 
@@ -114,6 +114,7 @@ module.exports = {
         .setTimestamp();
 
       const commandDescriptions = Object.entries(groupedCommands).map(([category, cmds]) => {
+        if (category === 'Hide') return;
         return `**${category}:**\n` + cmds.map((cmd) => `\`${cmd.name}\` - **${cmd.description}**`).join("\n");
       }).join("\n\n");
 
