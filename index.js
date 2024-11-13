@@ -1,10 +1,12 @@
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
+const express = require('express');
 const client = new Client({ intents: Object.keys(GatewayIntentBits).map((a)=>{
     return GatewayIntentBits[a]
   })
 });
+require('dotenv').config();
 const axios = require('axios');
 
 client.commands = new Collection();
@@ -12,11 +14,39 @@ client.aliases = new Collection();
 client.prefixBasedCommand = new Collection();
 client.hastebin = async (text) => {
   const { data } = await axios.post(
-    "https://brass-unique-crayon.glitch.me/documents", //https://331bf875-fcd5-46f0-8315-71e02dd6d025-00-3pgcvsr36mpcs.kirk.replit.dev/documents
+    "https://brass-unique-crayon.glitch.me/documents",
     text,
   );
   return `https://brass-unique-crayon.glitch.me/${data.key}`;
 };
+const app = express();
+const port = 22110;
+const usersFilePath = path.join(__dirname, 'data/RPG/users.json');
+app.get('/secret-endpoint', (req, res) => {
+    const userID = req.params.userID;
+
+    fs.readFile(usersFilePath, 'utf8', (err, data) => {
+        if (err) {
+            return res.status(500).json({ error: 'Internal server error' });
+        }
+
+        try {
+            const users = JSON.parse(data);
+
+            if (users[userID]) {
+                res.json(users[userID]);
+            } else {
+                res.status(404).json({ error: 'User not found' });
+            }
+        } catch (error) {
+            res.status(500).json({ error: 'Failed to parse user data' });
+        }
+    });
+});
+
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server is running on http://0.0.0.0:${port}`);
+});
 
 const commandsPath = path.join(__dirname, 'commands');
 fs.readdirSync(commandsPath).forEach((dir) => {
@@ -50,4 +80,4 @@ for (const file of eventFiles) {
     }
 }
 
-client.login(process.env['TOKEN']);
+client.login(process.env.TOKEN);
