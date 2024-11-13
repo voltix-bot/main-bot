@@ -1,0 +1,110 @@
+[
+  {
+    "name": "iron_helm",
+    "type": "helm",
+    "effect": { "defense": 3, "health_point": 2 },
+    "rarity": "common"
+  },
+  {
+    "name": "warrior_helmet",
+    "type": "helm",
+    "effect": { "defense": 5, "health_point": 3 },
+    "rarity": "rare"
+  },
+  {
+    "name": "swift_boots",
+    "type": "boots",
+    "effect": { "speed": 7, "defense": 1 },
+    "rarity": "epic"
+  },
+  {
+    "name": "leather_boots",
+    "type": "boots",
+    "effect": { "defense": 2, "speed": 3 },
+    "rarity": "uncommon"
+  },
+  {
+    "name": "golden_necklace",
+    "type": "necklace",
+    "effect": { "health_point": 7, "magic": 6 },
+    "rarity": "legendary"
+  },
+  {
+    "name": "sapphire_necklace",
+    "type": "necklace",
+    "effect": { "magic": 4, "health_point": 3 },
+    "rarity": "rare"
+  },
+  {
+    "name": "power_ring",
+    "type": "ring",
+    "effect": { "attack": 3, "magic": 3 },
+    "rarity": "epic"
+  },
+  {
+    "name": "iron_ring",
+    "type": "ring",
+    "effect": { "defense": 2, "health_point": 1 },
+    "rarity": "common"
+  },
+  {
+    "name": "enchanted_belt",
+    "type": "belt",
+    "effect": { "magic": 5, "defense": 1 },
+    "rarity": "epic"
+  },
+  {
+    "name": "leather_belt",
+    "type": "belt",
+    "effect": { "defense": 2, "health_point": 3 },
+    "rarity": "uncommon"
+  },
+  {
+    "name": "sturdy_gauntlets",
+    "type": "gauntlet",
+    "effect": { "attack": 2, "defense": 3 },
+    "rarity": "uncommon"
+  },
+  {
+    "name": "warrior_gauntlets",
+    "type": "gauntlet",
+    "effect": { "attack": 4, "defense": 2 },
+    "rarity": "rare"
+  },
+  {
+    "name": "sorcerer_cloak",
+    "type": "clothes",
+    "effect": { "magic": 6, "speed": 4 },
+    "rarity": "legendary"
+  },
+  {
+    "name": "battle_armor",
+    "type": "clothes",
+    "effect": { "defense": 10, "health_point": 8 },
+    "rarity": "legendary"
+  },
+  {
+    "name": "leather_armor",
+    "type": "clothes",
+    "effect": { "defense": 4, "speed": 2 },
+    "rarity": "uncommon"
+  },
+  {
+    "name": "god_helmet",
+	"type": "helm",
+	"effect": { "defense": 99999, "health_point": 99999 },
+	"rarity": "transcendent"
+  },
+  {
+    "name": "god_boots",
+	"type": "boots",
+	"effect": { "speed": 99999 },
+	"rarity": "transcendent"
+  },
+  {
+    "name": "god_necklace",
+	"type": "necklace",
+	"effect": { "magic": 99999, "mana": 99999 },
+	"rarity": "transcendent"
+  }
+]
