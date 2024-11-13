@@ -6,7 +6,9 @@ module.exports = {
     console.log("<===================================================================>")
     console.log(`Currently in ${client.guilds.cache.size} servers.`);
     console.log("<===================================================================>")
-    console.log(`${client.commands.size} commands loaded`);
+    console.log(`Slash command : ${client.commands.size} commands loaded`);
+    console.log("<===================================================================>")
+    console.log(`Prefix based command : ${client.prefixBasedCommand.size} commands loaded`);
     console.log("<===================================================================>")
 
     client.user.setPresence({
