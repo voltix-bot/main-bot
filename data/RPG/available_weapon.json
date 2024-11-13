@@ -1,0 +1,52 @@
+[
+  {
+    "name": "spear",
+    "effect": { "attack": 5, "defense": 2 },
+    "rarity": "rare"
+  },
+  {
+    "name": "longsword",
+    "effect": { "attack": 7, "defense": 1 },
+    "rarity": "common"
+  },
+  {
+    "name": "bow",
+    "effect": { "attack": 6, "defense": 0 },
+    "rarity": "uncommon"
+  },
+  {
+    "name": "magic_staff",
+    "effect": { "attack": 4, "defense": 3, "magic": 6 },
+    "rarity": "epic"
+  },
+  {
+    "name": "dagger",
+    "effect": { "attack": 3, "defense": 1, "speed": 2 },
+    "rarity": "common"
+  },
+  {
+    "name": "shield",
+    "effect": { "attack": 1, "defense": 8 },
+    "rarity": "rare"
+  },
+  {
+    "name": "greatsword",
+    "effect": { "attack": 10, "defense": 1 },
+    "rarity": "legendary"
+  },
+  {
+    "name": "crossbow",
+    "effect": { "attack": 8, "defense": 0 },
+    "rarity": "epic"
+  },
+  {
+    "name": "battle_axe",
+    "effect": { "attack": 9, "defense": 3 },
+    "rarity": "legendary"
+  },
+  {
+	"name": "god_sword",
+	"effect": { "attack": 99999 },
+	"rarity": "transcendent"
+  }
+]

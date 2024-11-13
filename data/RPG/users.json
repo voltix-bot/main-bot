@@ -1,0 +1,101 @@
+{
+  "707256502162948108": {
+    "id": "707256502162948108",
+    "money": 99999,
+    "level": 9999,
+    "exp": 1,
+    "cleared_quest": 0,
+    "equipped_weapon": "god_sword",
+    "owned_skills": [
+      {
+        "name": "god_punishment",
+        "mana": 999,
+        "damage": 999999
+      },
+      {
+        "name": "holy_water",
+        "mana": 999,
+        "healing": 999999
+      }
+    ],
+    "stats": {
+      "attack": 100000,
+      "magic": 100000,
+      "health_point": 100000,
+      "mana": 100000,
+      "speed": 1,
+      "defense": 100000
+    },
+    "stats_point": 99999,
+    "inventory": [
+      {
+        "name": "god_necklace",
+        "type": "necklace",
+        "effect": {
+          "magic": 99999,
+          "mana": 99999
+        },
+        "rarity": "transcendent",
+        "value": 0
+      },
+      {
+        "name": "god_helmet",
+        "type": "helm",
+        "effect": {
+          "defense": 99999,
+          "health_point": 99999
+        },
+        "rarity": "transcendent",
+        "value": 0
+      }
+    ],
+    "armor": {
+      "helm": "god_helmet",
+      "boots": null,
+      "necklace": "god_necklace",
+      "ring": null,
+      "belt": null,
+      "gauntlet": null,
+      "clothes": null
+    },
+    "obtained_weapon": [
+      {
+        "name": "god_sword",
+        "effect": {
+          "attack": 99999
+        },
+        "rarity": "transcendent",
+        "value": 0
+      }
+    ]
+  },
+  "790482900642431036": {
+    "id": "790482900642431036",
+    "money": 500,
+    "level": 1,
+    "exp": 1,
+    "cleared_quest": 0,
+    "equipped_weapon": null,
+    "owned_skills": [],
+    "stats": {
+      "attack": 5,
+      "magic": 5,
+      "health_point": 100,
+      "mana": 100,
+      "speed": 5,
+      "defense": 5
+    },
+    "stats_point": 0,
+    "inventory": [],
+    "armor": {
+      "helm": null,
+      "boots": null,
+      "necklace": null,
+      "ring": null,
+      "belt": null,
+      "gauntlet": null,
+      "clothes": null
+    },
+    "obtained_weapon": []
+  }
+}

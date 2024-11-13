@@ -1,0 +1,80 @@
+[
+  {
+    "name": "fireball",
+    "mana": 3,
+    "damage": 5
+  },
+  {
+    "name": "ice_spike",
+    "mana": 4,
+    "damage": 6
+  },
+  {
+    "name": "thunder_strike",
+    "mana": 5,
+    "damage": 8
+  },
+  {
+    "name": "healing_touch",
+    "mana": 3,
+    "healing": 7
+  },
+  {
+    "name": "shadow_blast",
+    "mana": 6,
+    "damage": 9
+  },
+  {
+    "name": "earthquake",
+    "mana": 7,
+    "damage": 10
+  },
+  {
+    "name": "wind_slash",
+    "mana": 2,
+    "damage": 4
+  },
+  {
+    "name": "holy_light",
+    "mana": 4,
+    "healing": 8
+  },
+  {
+    "name": "poison_dart",
+    "mana": 3,
+    "damage": 5,
+    "poison_duration": 3
+  },
+  {
+    "name": "arcane_blast",
+    "mana": 5,
+    "damage": 7
+  },
+  {
+    "name": "stone_skin",
+    "mana": 4,
+    "defense_boost": 5,
+    "duration": 3
+  },
+  {
+    "name": "meteor_shower",
+    "mana": 8,
+    "damage": 12
+  },
+  {
+    "name": "god_punishment",
+    "mana": 999,
+    "damage": 999999
+  },
+  {
+    "name": "holy_water",
+    "mana": 999,
+    "healing": 999999
+  },
+  {
+    "name": "life_drain",
+    "mana": 6,
+    "damage": 5,
+    "healing": 5
+  }
+]
