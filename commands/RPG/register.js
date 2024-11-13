@@ -10,7 +10,6 @@ module.exports = {
     async execute(message, args, client) {
       const id = message.author.id;
 
-      // Check if user already has an account
       if (users.get(id)) {
         return message.reply('You have already registered!');
       }
@@ -35,7 +34,6 @@ module.exports = {
             .setStyle('Danger')
         );
 
-      // Send the Terms of Service embed and buttons
       const confirmMessage = await message.reply({
         embeds: [termsEmbed],
         components: [actionRow]
@@ -81,7 +79,6 @@ module.exports = {
           };
 
           try {
-            // Save the user data if they don't already exist
             users.set(id, data);
             await interaction.reply('Successfully registered!');
           } catch (e) {
@@ -91,7 +88,6 @@ module.exports = {
           await interaction.reply('Registration canceled. You did not agree to the terms.');
         }
 
-        // Disable buttons and retain their custom IDs
         confirmMessage.edit({
           components: [
             new ActionRowBuilder().addComponents(
