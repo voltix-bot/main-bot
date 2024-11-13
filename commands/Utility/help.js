@@ -17,6 +17,7 @@ module.exports = {
         .addChoices(
           { name: "Moderation", value: "Moderate" },
           { name: "Utility", value: "Utility" },
+		  { name: 'RPG', value: 'RPG' }
         ),
     ),
   async execute(interaction) {
@@ -79,6 +80,11 @@ module.exports = {
           value: "Moderate",
           description: "Select moderation category",
         },
+		{
+		  label: 'RPG',
+		  value: 'RPG',
+		  description: 'Select RPG category'
+		}
       ]);
     const row = new ActionRowBuilder().addComponents(selectMenu);
 
@@ -134,6 +140,11 @@ module.exports = {
             value: "Moderate",
             description: "Select moderation category",
           },
+	  	{
+		  label: 'RPG',
+		  value: 'RPG',
+		  description: 'Select RPG category'
+  		}
         ]);
       const row = new ActionRowBuilder().addComponents(selectMenu);
       const msg = await message.channel.send({ embeds: [embed], components: [row] });
